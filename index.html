@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/angular.audio.js"></script>
+    <script src="js/index.js"></script>
+    <title>One Night</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp">
+        <div ng-controller="audioTest as app">
+            <div ng-show="page">
+                <h1 class="h">
+
+    ONE NIGHT
+  </h1>
+                <div>
+                    <center>
+                        <table class="table" cellpadding="0" cellspacing="30">
+                            <tr>
+                                <td>
+                                    <div class="border1">
+                                        <img src="img/img1.jpg" ng-click="app.click(1)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border2">
+                                        <img src="img/img2.jpg" ng-click="app.click(2)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border3">
+                                        <img src="img/img2.jpg" ng-click="app.click(3)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border4">
+                                        <img src="img/img3.jpg" ng-click="app.click(4)">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="border5">
+                                        <img src="img/img4.jpg" ng-click="app.click(5)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border6">
+                                        <img src="img/img4.jpg" ng-click="app.click(6)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border7">
+                                        <img src="img/img5.jpg" ng-click="app.click(7)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border8">
+                                        <img src="img/img6.jpg" ng-click="app.click(8)">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="border9" ng-click="app.click(9)">
+                                        <img src="img/img7.jpg">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border10">
+                                        <img src="img/img8.jpg" ng-click="app.click(10)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border11">
+                                        <img src="img/img9.jpg" ng-click="app.click(11)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border12">
+                                        <img src="img/img10.jpg" ng-click="app.click(12)">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="border13">
+                                        <img src="img/img10.jpg" ng-click="app.click(13)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border14">
+                                        <img src="img/img10.jpg" ng-click="app.click(14)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border15">
+                                        <img src="img/img11.jpg" ng-click="app.click(15)">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border16">
+                                        <img src="img/img12.jpg" ng-click="app.click(16)">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+                <center>
+                    <button data-word='PLAY' class="button" ng-click="playSound()"></button>
+                </center>
+            </div>
+            <div ng-show="!page">
+                <img ng-src="{{img[6]}}">
+                <br>
+                <button ng-click="gameStart(statussound)">{{statussound}}</button>
+                <button ng-click="stopSound()">STOP</button>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
